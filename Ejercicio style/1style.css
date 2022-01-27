@@ -1,0 +1,44 @@
+/* Clase circulo */
+
+.div { 
+    border: 1px;
+    display: inline-block;
+
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 8px solid black;
+    background: white;
+    padding: 10px;
+    display: inline;
+}
+
+.rojo {
+    background-color: red;
+    display: inline;
+
+
+}
+
+.con-sombra {
+    box-shadow: 3;
+    display: inline;
+}
+
+.especial {
+    background-color: yellow;
+    border: 8px solid orange;
+    display: inline;
+}
+
+.body {
+    background-color: plum;
+
+}
+
+
+    
+

@@ -1,0 +1,9 @@
+/* Ejercicio 2 */
+
+.div {
+    border: 20em solid red;
+    padding: 20em;
+    margin: 20em;
+    background-color: white;
+    color: rgb(230, 25, 25);
+}
