@@ -1,8 +1,10 @@
 /* Clase circulo */
 
-.div { 
-    border: 1px;
+div { 
+    border: 8px;
     display: inline-block;
+    background-color: plum;
+    background-height: 50%;
 
 }
 
@@ -14,6 +16,7 @@
     background: white;
     padding: 10px;
     display: inline;
+    margin: 5px;
 }
 
 .rojo {
@@ -34,10 +37,14 @@
     display: inline;
 }
 
-.body {
-    background-color: plum;
+.style {
+
 
 }
+
+
+
+
 
 
     

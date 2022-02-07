@@ -1,0 +1,16 @@
+div p {
+height: 120px;
+width: 300px;
+background-color: seagreen;
+color:black bold;
+margin: 30px 50px;
+padding: 70px;
+border: 10px dotted;
+text-align: center;
+vertical-align: middle;
+display: inline-table;
+font-weight: bold;
+font-size: large;
+
+
+}
