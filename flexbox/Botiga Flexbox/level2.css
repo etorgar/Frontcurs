@@ -19,23 +19,17 @@
             
             
         
-        .menu {
+        .menu1 {
             display: flex;
             flex-flow: row;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
-
+            font-size:xx-large;
+            background: url(/imagenes/https:::trianglify.io:p:w:1440!h:900!x:Blues!v:0.115!c:0.164!s:o23dhy!f:il!i:0.30.png) no-repeat;
+            background-size: cover;
+            font-weight: bolder;
+            
         }
-            .cero {
-                display: flex;
-                width: 100%;
-                height: 20%;
-                order: 3;
             
-            
-            
-
-        }
         
             .uno {
                 display: flex;
@@ -43,6 +37,8 @@
                 text-align: center;
                 margin-top: 9%;
                 order: 1;
+                align-self: center;
+                
                 
             }
             .dos {
@@ -51,6 +47,7 @@
                 text-align: center;
                 margin-top: 9%;
                 order: 2;
+                align-self: center;
             }
             .tres {
                 display: flex;
@@ -58,6 +55,7 @@
                 text-align: center;
                 margin-top: 9%;
                 order: 4;
+                align-self: center;
             }
             .cuatro {
                 display: flex;
@@ -65,18 +63,69 @@
                 text-align: center;
                 margin-top: 9%;
                 order: 5;
+                align-self: center;
             }
+            
 
-        .presentacion-video {
+
+            
+        .video {
                 display: flex;
                 justify-content: center;
-                position: relative;
-                padding-bottom: 56.25%; /* 16/9 ratio */
-                padding-top: 30px; /* IE6 workaround*/
+                align-items: stretch;
                 height: 0;
                 overflow: hidden;
                 border: solid black;
+                margin-left: 1px;
+                margin-right: 1px;
+               
+
         }
+        .menu2 {
+            display: flex;
+            flex-flow: row;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            font-weight: bolder;
+            background-image: url(imagenes/https:::trianglify.io:p:w:1440!h:900!x:Blues!v:0.115!c:0.164!s:o23dhy!f:il!i:0.30.png);
+            align-items: cover;
+            align-content: space-around;
+            margin-left: 15px;
+            flex-basis: content;
+            padding: 15px;
+            margin: 15px;
+        }
+        
+            .uno {
+                display: flex;
+                flex: 1 1 auto;
+                text-align: center;
+                margin-top: 1%;
+                order: 1;
+                padding-left: 130px;
+                
+            }
+            .dos {
+                display: flex;
+                flex: 1 1 auto;
+                text-align: center;
+                margin-top: 1%;
+                order: 2;
+            }
+            .tres {
+                display: flex;
+                flex: 1 1 auto;
+                text-align: center;
+                margin-top: 1%;
+                order: 3;
+            }
+            .cuatro {
+                display: flex;
+                flex: 1 1 auto;
+                text-align: center;
+                margin-top: 1%;
+                order: 4;
+            }
 
             
     .section {
@@ -105,6 +154,7 @@
                 align-items: stretch;
                 flex-wrap: wrap;
                 flex-direction: column wrap;
+                justify-content: center;
                 
                 
             }
@@ -136,21 +186,26 @@
         
 
         .aside {
-            display: flex;
-            flex-direction: column wrap;
+            display: flex wrap;
+            flex-direction: column;
             background-image: url("/flexbox/Botiga Flexbox/imagenes/estrellasconjunto.jpeg");
             background-repeat: no-repeat;
             border: solid;
             width: 1220px;
             height: 1000px;
-            float: right;
+            float: center;
             flex: 1 1 auto;
-            flex-wrap: wrap;
-   
-      
+            font-size: 50px;
         }
             
-
+        h1 {
+            font-size: 50px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            
+        }
     .footer {
         background:black;
         display: flex;
@@ -176,7 +231,19 @@
     }
     .aside {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+
+    }
+    video {
+        display: flex;
+        aspect-ratio: 16/9;
+
+    }
+    .menu1 .menu2 {
+        display: flex;
+        font-size: large;
+
     }
 }
 
@@ -189,23 +256,40 @@
         display: flex;
 
     }
+    .menu1 .menu2 {
+        display: flex;
+        font-size: medium;
+        float: inline-start;
+    }
 }
 
 @media all and (max-width: 400px) {
     .aside {
-        display: flex;
-        flex-direction: column;
+        display: flex wrap;
+        flex-direction: column left;
+        height: auto;
+        flex: 0 0 33.3333333%;
 
     }
     .articulos {
         display: flex;
         flex-direction: column;
         height: auto;
+        justify-content: center;
 
     }
-    .banner {
+    .video {
+        aspect-ratio: 8/4;
         display: flex;
         height: auto;
+        flex: 0 0 25%;
+       
 
+    }
+    .menu1 .menu2 {
+        display: flex;
+        font-size: small;
+        align-content: initial;
+        margin-left: 5px;
     }
 }
