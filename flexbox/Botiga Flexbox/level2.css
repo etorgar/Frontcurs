@@ -281,8 +281,9 @@
     .video {
         aspect-ratio: 8/4;
         display: flex;
+        width: 100%;
         height: auto;
-        flex: 0 0 25%;
+        
        
 
     }

@@ -242,6 +242,7 @@
     video {
         display: flex;
         aspect-ratio: 16/9;
+        width: 100%;
 
     }
     .menu1 .menu2 {
@@ -258,6 +259,8 @@
     }
     .video {
         display: flex;
+        aspect-ratio: 8/4;
+        width: 100%;
 
     }
     .menu1 .menu2 {
