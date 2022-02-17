@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Eliminar los espacios que se han puesto de más//
+        const producto= "Monitor de 20 pulgadas    ";
+        console.log(producto.trim());
+
+        //Practicar .replace, .slice; y typeof//
+        //reemplazar 20 por 40//
+        let result=producto.replace("20", "40");
+        console.log(result.replace());
+
+        //Extraer una nueva variable la siguiente parte de la frase: 40 pulgadas//
+        let sustraer=producto.substring(12, 13);
+        console.log(sustraer.substring());
+
+
+        
+        //Practicarem amb Split//
+        let actividad= "Estoy aprendiendo Javascript Moderno";
+        let newActividad= actividad.split(" ");
+        console.log(newActividad);
+        
+        let hobbies= "Leer, caminar, escuchar musica, escribir, aprender a programar";
+        let hobbiesNew= "Leer, caminar, escuchar musica, escribir, bailar, aprender a programar";
+        console.log(hobbiesNew);
+
+        //Cambiar el siguiente texto todo a mayusculas//
+        const productos= "Monitor 24 pulgadas";
+        console.log(productos.toUpperCase);
+
+        console.log(productos.toLowerCase);
+
+        /* Realizar la busqueda de un string en un string de origen. 
+        Para hacerlo se debe solicitar por pantalla una frase o texto,
+        y despues la palabra a buscar. En caso de encontrarla, imprimir
+        la posición, sino un mensaje que diga que no está" 
+
+        let frase=prompt ("Ingrese una oracion:");
+        let palabra=prompt ("Ingrese una palabra");
+        document.write(palabra);
+        var dondeEsta=frase.indexOf(palabra);
+        document.write("donde esta" + dondeEsta);
+
+        */
+
+
+
+
+
+    </script>
+</body>
+</html>
