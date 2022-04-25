@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio componentes</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+</head>
+<body>
+    <div id="my-app">
+        <h1>{{name}}</h1>
+        <h2>El primer boto esta dintre del objecte VUE</h2>
+        <h1></h1>
+        <button @click="onAdd">{{count}} boto objecte de VUE</button>
+        <h2>El segon botó està fet amb un component </h2>
+<!-- Cridem a un component de VUE -->
+<my-button></my-button>
+<my-button></my-button>
+<my-button></my-button>
+<my-button></my-button>
+<user-detail first="test"></user-detail>
+</div>
+<div id="my-app">
+    {{Benvinguda}}                                     
+    <user-detail first="Maria" last="Perez" ></user-detail>        
+    <user-detail v-bind:first='firstName' v-bind:last='lastName' ></user-detail> 
+    <!-- Como Usamos CamelCase, no se mostrarà -->
+    <user-err v-bind:firstname='firstName' v-bind:lastname='lastName' ></user-err> 
+    <user-detallado v-bind:first='firstName' v-bind:last='lastName' v-bind:edat='edat' ></user-detallado> 
+    <!-- Sin edat que es requiered, nos darà warning -->
+    <user-detallado v-bind:first='firstName' v-bind:last='lastName'  ></user-detallado> 
+    <!-- Enviamos como edat un string .. nos funciona, pero tambien nos darà warning -->
+    <user-detallado v-bind:first='firstName' v-bind:last='lastName' edat='15' ></user-detallado> 
+</div>
+
+<script src="./componentes/user-err.js"></script>
+<script src="./componentes/user-detail.js"></script>
+<script src="./componentes/user-detallado.js"></script>
+<script src="./componentes/app.js"></script>
+
+
+</body>
+
+</html>

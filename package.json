@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/etorgar/Frontcurs/issues"
   },
-  "homepage": "https://github.com/etorgar/Frontcurs#readme"
+  "homepage": "https://github.com/etorgar/Frontcurs#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
 }

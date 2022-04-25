@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js'></script>
+    <!-- <script src='https://'"https://unpkg.com/vue@next" defer></script> -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>FriendList</h1>
+    </header>
+    <section id="app">
+      <ul>
+        <li v-for="friend in friends" :key="friend.id">
+          <h2>{{friend.name}}</h2>
+          <button @click="toggleDetails()"></button>
+          {{detailsAreVisible ? 'hide' : 'show'}} Details
+        <!--  <user-detail: primer='firstName' :segundo="lastName"></user-detail> -->
+        </li>
+        <li v-if="detailsAreVisible" :key="friend.id" >
+          <button @click="toggleDetails()"></button>
+          {{detailsAreVisible ? 'hide' : 'show'}} Details
+        </li>
+        
+      </ul>
+    </section>
+  </body>
+</html>

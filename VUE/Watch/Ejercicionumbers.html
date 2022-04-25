@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio numbers-watch</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        n1: <input type="number" v-model="n1">
+        n2: <input type="number" v-model="n2">
+        n3: <input type="number" v-model="n3">
+
+        The sum() is: {{total}}
+        <button v-on:click="sum">Suma</button>
+        <break></break>
+    </div>
+    <script>
+        var el= new Vue({
+            el:"#app",
+            data:{
+                n1: 0,
+                n2: 0,
+                n3: 0,
+            },
+        watch: {
+            n1: function (val){
+                this.n3= parseInt(this.n1) + parseInt(this.n2);
+            },
+            n2: function (val){
+
+                this.n3= parseInt(this.n1) + parseInt(this.n2);
+            }
+        }
+          
+        }),
+
+
+    </script>
+</body>
+</html>

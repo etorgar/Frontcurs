@@ -1,0 +1,16 @@
+/* Exercici 3, Event al formulari: input
+a) Afegeix un event perquè ens mostri un alert cada vegada que escrivim una lletra al
+buscador
+b) Afegeix un event perquè ens mostri un alert cada vegada que escrivim la lletra a al
+buscador
+c) El mateix que l'exercici 2, però ara fes servir una funció.*/
+busqueda.addEventListener('input',() =>{
+    alert('escribint...');
+})
+
+busqueda.addEventListener('input', e =>{
+    if(eventoform.target.value == 'a') {
+        alert('Ha escrit a...');
+    }
+    
+})
